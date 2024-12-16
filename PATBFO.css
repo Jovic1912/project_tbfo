@@ -1,0 +1,109 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #1e3c72, #2a5298);
+    color: white;
+    text-align: center;
+  }
+  
+  h1 {
+    padding: 20px;
+    background: #003366;
+    color: white;
+    margin: 0;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  #controls {
+    margin: 20px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+  }
+  
+  input, select, button {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #005bb5;
+    background: #f0f8ff;
+    color: #003366;
+    font-size: 16px;
+  }
+  
+  button {
+    background-color: #005bb5;
+    color: white;
+    transition: background 0.3s, transform 0.2s;
+  }
+  
+  button:hover {
+    background-color: #0073e6;
+    transform: scale(1.05);
+  }
+  
+  #tape {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    padding: 10px;
+    width: 90%;
+    max-width: 600px;
+    overflow-x: auto;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+  }
+  
+  .cell {
+    width: 50px;
+    height: 50px;
+    border: 2px solid white;
+    margin: 5px;
+    background-color: #87cefa;
+    color: #003366;
+    text-align: center;
+    line-height: 50px;
+    font-weight: bold;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+  }
+  
+  .head {
+    background: #ffd700;
+    animation: head-glow 0.5s infinite alternate;
+  }
+  
+  @keyframes head-glow {
+    from { box-shadow: 0px 0px 10px #ffd700; }
+    to { box-shadow: 0px 0px 20px #ffd700; }
+  }
+  
+  .running {
+    color: yellow;
+    font-weight: bold;
+    animation: blink 1s infinite;
+  }
+  
+  @keyframes blink {
+    from { opacity: 1; }
+    to { opacity: 0.5; }
+  }
+  
+  #result, #total {
+    font-size: 18px;
+    margin: 10px auto;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    display: inline-block;
+  }
+  
+  #state {
+    margin-top: 20px;
+    font-size: 18px;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    border-radius: 10px;
+    display: inline-block;
+  }  

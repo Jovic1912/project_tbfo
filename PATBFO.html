@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mesin Turing: Simulasi Deret dengan State</title>
+  <link rel="stylesheet" href="PATBFO.css">
+</head>
+<body>
+  <h1>Mesin Turing: Simulasi Deret dengan State</h1>
+  <div id="controls">
+    <input type="number" id="start" placeholder="Nilai Awal (a)">
+    <input type="number" id="diff" placeholder="Selisih/Pengali (d/r)">
+    <input type="number" id="terms" placeholder="Jumlah Suku (n)">
+    <select id="seriesType">
+      <option value="arithmetic">Aritmatika</option>
+      <option value="geometric">Geometri</option>
+    </select>
+    <button onclick="runTuringMachine()">Jalankan Mesin</button>
+    <p id="status">Status: <span id="statusText">Menunggu input...</span></p>
+    <p id="state">State Mesin: <span id="currentState">q0</span></p>
+  </div>
+  <div id="tape"></div>
+  <p id="result"></p>
+  <p id="total"></p>
+  <script src="PATBFO.js"></script>
+</body>
+</html>
